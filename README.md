@@ -23,56 +23,6 @@ SwiftChat supports real-time messaging using a WebSocket client, clean MVVM stru
 
 🎯 Easily extendable: offline support, message persistence, group chats, etc.
 
-Repository
-
-
-SwiftChat/
-
-│
-├── App/
-
-│   └── SwiftChatApp.swift
-│
-
-├── Models/
-│   ├── Message.swift
-│   ├── User.swift
-│   └── Theme.swift
-│
-
-├── Views/
-
-│   ├── ChatView/
-
-│   │   ├── ChatView.swift
-│   │   ├── ChatInputBar.swift
-│   │   ├── MessageBubble.swift
-│   │   └── TypingIndicatorView.swift
-│   │
-
-│   └── ContentView.swift
-│
-
-├── ViewModels/
-
-│   └── ChatViewModel.swift
-│
-
-├── Networking/
-
-│   ├── URLSessionWebSocketRealtime.swift
-│   ├── MessageRepository.swift
-│   └── WebSocketMessageRepository.swift
-│
-
-├── Resources/
-
-│   └── Assets.xcassets
-│
-
-└── README.md
-
-
 
 WebSocketMessageRepository (Implementation)
 

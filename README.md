@@ -18,12 +18,45 @@ src="https://capsule-render.vercel.app/api?type=waving&color=0:070A12,45:1E3A8A,
 
 <br/><br/>
 
+<a href="#-getting-started"><b>Getting Started</b></a> •
 <a href="#-architectural-philosophy"><b>Architecture</b></a> •
 <a href="#-real-time-data-flow"><b>Real-Time Flow</b></a> •
 <a href="#-project-overview"><b>Overview</b></a> •
 <a href="#-contact"><b>Contact</b></a>
 
 </div>
+
+---
+
+
+<!-- quickstart:start -->
+# 🚀 Getting Started
+
+**Requirements:** macOS with **Xcode 26** or later (iOS 26 SDK) and Python 3.9+ for the local test server. No third-party Swift packages.
+
+The complete Xcode project is in `SwiftChat.zip`:
+
+```bash
+git clone https://github.com/Navyagowda2714/Swiftchat.git
+cd Swiftchat
+unzip SwiftChat.zip -x "SwiftChat/.git/*"
+```
+
+**1. Start the WebSocket server** (broadcasts every message to all connected clients):
+
+```bash
+pip install websockets
+python server/chat_server.py        # ws://localhost:8080
+```
+
+**2. Run the app**
+
+```bash
+open SwiftChat/SwiftChat.xcodeproj
+```
+
+Select an iPhone simulator and press **⌘R**. Run a second simulator (or the app plus `python -m websockets ws://localhost:8080`) to see messages arrive in real time. To use another backend, change `socketURL` in `App/SwiftChatApp.swift`.
+<!-- quickstart:end -->
 
 ---
 
